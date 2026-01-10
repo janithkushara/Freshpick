@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>All Products</title>
+
+    <!-- Link our CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product.css" />
+
+    <!-- Link for font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!--HEADER-->
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="Logo">
+                <img src="assets/logo.png" alt="FreshPick Logo" class="headerlogo">
+                <h3 class="headertxt">FreshPick</h3>
+            </a>
+
+            <!--For Desktop-->
+            <ul class="navlist">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="index.html#services">Services</a>
+                </li>
+
+                <li>
+                    <a href="allproducts.html">All Products</a>
+                </li>
+
+                <li>
+                    <a href="#">Contacts</a>
+                </li>
+
+            </ul>
+            <div class="desktop-action">
+
+                <div class="search-box">
+                    <input type="text" placeholder="Search products">
+                    <label for="search-box" class="fa fa-search"></label>
+                </div>
+
+                <a href="#" class="cart-icon icons">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-value">0</span>
+                </a>
+
+                <a href="#" class="btn">Login</a>
+
+                <a href="#" class="hamburger icons">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+
+            </div>
+
+            <!--For Mobile-->
+            <ul class="mobile">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="allproducts.html">All Products</a>
+                </li>
+
+                <li>
+                    <a href="index.html#services">Services</a>
+                </li>
+
+                <li>
+                    <a href="#">About us</a>
+                </li>
+
+                <li>
+                    <a href="#">Contacts</a>
+                </li>
+
+                <li>
+                    <a href="#" class="btn">Log in</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <h1 class="prdtxt">ALL PRODUCTS</h1>
+    <div id="products-container"></div>
+
+    <!--Link our JavaScript file-->
+    <script src="script.js"></script>
+    <script src="product.js"></script>
+</body>
+
+</html>

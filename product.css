@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* border: red 1px solid; */
+}
+
+
+body {
+    background: #f8f8f8;
+}
+
+.prdtxt{
+    margin: 2rem 8rem;
+    color: rgb(40, 39, 39);
+    font-size: 1.7rem;
+    font-weight: 500;
+    
+}
+
+#products-container {
+    margin: 2rem 8rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.product-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+
+
+/* Mobile Responsive */
+
+@media screen and (max-width: 768px) {
+  .prdtxt {
+    margin: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  #products-container {
+    margin: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 1rem;
+  }
+
+  .product-card {
+    padding: 1rem;
+  }
+
+  .product-card img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .product-card h3 {
+    font-size: 1rem;
+  }
+
+  .product-card button {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.8rem;
+  }
+}

@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="png" href="assets\whitelogo.png">
+
+  <!-- To make our website responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>FreshPick - Easy Groceries</title>
+
+  <!-- Link our CSS file -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Link for font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+  <!--HEADER-->
+  <header class="header">
+    <nav class="navbar">
+      <a href="index.html" class="Logo">
+        <img src="assets/logo.png" alt="FreshPick Logo" class="headerlogo">
+        <h3 class="headertxt">FreshPick</h3>
+      </a>
+
+      <!--For Desktop-->
+      <ul class="navlist">
+
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+
+        <li>
+          <a href="index.html#services">Services</a>
+        </li>
+
+        <li>
+          <a href="allproducts.html">All Products</a>
+        </li>
+
+        <li>
+          <a href="#">Contacts</a>
+        </li>
+
+      </ul>
+      <div class="desktop-action">
+
+        <div class="search-box">
+          <input type="text" placeholder="Search products">
+          <label for="search-box" class="fa fa-search"></label>
+        </div>
+
+        <a href="#" class="cart-icon icons">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-value">0</span>
+        </a>
+
+        <a href="#" class="btn">Login</a>
+
+        <a href="#" class="hamburger icons">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+
+      </div>
+
+      <!--For Mobile-->
+      <ul class="mobile">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+
+        <li>
+          <a href="allproducts.html">All Products</a>
+        </li>
+
+        <li>
+          <a href="index.html#services">Services</a>
+        </li>
+
+        <li>
+          <a href="#">About us</a>
+        </li>
+
+        <li>
+          <a href="#">Contacts</a>
+        </li>
+
+        <li>
+          <a href="#" class="btn">Log in</a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <!--SECTIONS-->
+
+  <main>
+    <section>
+      <div class="banner">
+        <div class="textbox">
+          <h1>Freshness You Can Trust, Savings You will Love!</h1>
+          <div class="cta-btns">
+            <a href="allproducts.html" class="shop-now">Shop now
+              <span class="mobile-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+            <a href="#" class="explore-deals">Explore deals
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="category-section">
+
+      <h2 class="category-title">Categories</h2>
+
+      <div class="categories">
+        <div class="category category-1" data-category="organic-veggies">
+          <img src="assets/organic_vegitable_image.png" alt="Organic Veggies" />
+          <p>Organic Veggies</p>
+        </div>
+
+        <div class="category category-2" data-category="fresh-fruits">
+          <img src="assets/fresh_fruits_image.png" alt="Fresh Fruits" />
+          <p>Fresh Fruits</p>
+        </div>
+
+        <div class="category category-3" data-category="cold-drinks">
+          <img src="assets/bottles_image.png" alt="Fresh Fruits" />
+          <p>Cold Drinks</p>
+        </div>
+
+        <div class="category category-4" data-category="instant-food">
+          <img src="assets/maggi_image.png" alt="Fresh Fruits" />
+          <p>Instant Food</p>
+        </div>
+
+        <div class="category category-5" data-category="dairy-products">
+          <img src="assets/dairy_product_image.png" alt="Fresh Fruits" />
+          <p>Dairy Products</p>
+        </div>
+
+        <div class="category category-6" data-category="bakery">
+          <img src="assets/bakery_image.png" alt="Fresh Fruits" />
+          <p>Bakery & Breads</p>
+        </div>
+
+        <div class="category category-7" data-category="grains">
+          <img src="assets/grain_image.png" alt="Fresh Fruits" />
+          <p>Grains & Cereals</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="service">
+        <div class="servicetxt">
+          <span class="maintxt">Why We Are the Best?</span>
+
+          <ul class="service-list">
+            <li><img src="assets/delivery_truck_icon.svg" class="serviceicons"><span class="txt"><span
+                  class="text1">Fastest Delivery</span>
+                <span class="text2">Groceries delivered in under 30 minutes.</span></span></li>
+
+            <li><img src="assets/leaf_icon.svg" class="serviceicons"><span class="txt"><span class="text1">Freshness
+                  Guaranteed</span>
+                <span class="text2">Fresh produce straight from the source.</span></span></li>
+
+            <li><img src="assets/coin_icon.svg" class="serviceicons"> <span class="txt"><span class="text1">Affordable
+                  Prices</span>
+                <span class="text2">Quality groceries at unbeatable prices.</span></span></li>
+
+            <li><img src="assets/trust_icon.svg" class="serviceicons"> <span class="txt"><span class="text1">Trusted by
+                  Thousands</span>
+                <span class="text2">Loved by 10,000+ happy customers.</span></span></li>
+          </ul>
+
+
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="subscribe">
+        <h1>Never Miss a Deal!</h1>
+        <p>Subscribe to get the latest offers, new arrivals, and exclusive discounts</p>
+        <div class="mailbox">
+          <input type="email" placeholder="Enter your email id">
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!--FOOTER-->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <div class="footer-logo">
+          <img src="assets/logo.png" alt="FreshPick Logo" class="footerlogo">
+          <h3 class="logotxt">FreshPick</h3>
+        </div>
+        <p>We deliver fresh groceries and snacks straight to your door. Trusted by thousands, we aim to make your
+          shopping
+          experience simple and affordable.</p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Best Sellers</a></li>
+            <li><a href="#">Offers & Deals</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Need help?</h3>
+          <ul class="links">
+            <li><a href="#">Delivery Information</a></li>
+            <li><a href="#">Return & Refund Policy</a></li>
+            <li><a href="#">Payment Methods</a></li>
+            <li><a href="#">Track your Order</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+          <ul class="links">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <p class="footer-bottom">Copyright 2025 © All Right Reserved.</p>
+  </footer>
+
+  <!--Link our JavaScript file-->
+  <script src="script.js"></script>
+</body>
+
+</html>
