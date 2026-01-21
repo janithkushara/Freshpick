@@ -1,3 +1,4 @@
+const product = require("../models/product");
 const Product = require("../models/product");
 
 exports.addProduct = async (req, res) => {
@@ -44,3 +45,20 @@ exports.addProduct = async (req, res) => {
     });
   }
 };
+exports.getallproducts= async(req,res)=>{
+    try{
+      const getproducts=await product.find().populate("categoryId");
+      res.status(200).json(getproducts);
+    }catch(error){
+      res.status(500).json({message:"failed to fetch products"});
+    }
+};
+exports.getproductbyid=async(req,res)=>{
+  try{
+    const productbyid=await product.findById(req.params.id).populate("categoryId");
+    if(!productbyid){
+      return res.status(404).json({message:"product not found"});
+    }
+    res.status(200).json(productbyid);
+  }
+}
