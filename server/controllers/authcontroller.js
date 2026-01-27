@@ -14,7 +14,7 @@ exports.signupbutton=async(req,res)=>{
        }
        const hashedPassword = await bcrypt.hash(password, 10);
 
-       const newuser= await student.create({
+       const newuser= await user.create({
         firstName,
         lastName,
         email,

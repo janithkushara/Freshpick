@@ -9,9 +9,9 @@ connectDB();
 const app=express();
 app.use(cors());
 app.use(express.json());
-app.use("api/auth",require("./routes/authroutes"));
-app.use("api/category",require("./routes/categoryroutes"));
-app.use("api/product",require("./routes/productRoutes"));
+app.use("/api/auth",require("./routes/authroutes"));
+app.use("/api/category",require("./routes/categoryroutes"));
+app.use("/api/product",require("./routes/productRoutes"));
 
 const PORT=process.env.PORT || 5000;
 app.listen(PORT,()=>{
