@@ -57,7 +57,7 @@ exports.getproductbyid=async(req,res)=>{
       return res.status(404).json({message:"product not found"});
     }
     res.status(200).json(productbyid);
-  }catch (arror){
+  }catch (error){
     res.status(500).json({
       message:"failed to fetch product",
       error:error.message
@@ -72,7 +72,7 @@ exports.updateProduct=async (req,res)=>{
         {new:true}
       ).populate("categoryId");
 
-      if(!updatedProduct){
+      if(!updateproduct){
         return res.status(404).json({
           message:"product not found"
         });
